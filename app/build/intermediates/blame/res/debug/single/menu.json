@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/menu/scanning.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/menu/scanning.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/menu/peripheral.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/menu/peripheral.xml"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/progress_indicator.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/progress_indicator.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/peripheral_list_characteristic_item.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/peripheral_list_characteristic_item.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/activity_scanning_item.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/activity_scanning_item.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/peripheral_list_services_header.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/peripheral_list_services_header.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/activity_peripheral.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/activity_peripheral.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/peripheral_details_characteristic_item.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/peripheral_details_characteristic_item.xml"
+    },
+    {
+        "merged": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/res/merged/debug/layout/peripheral_list_services_item.xml",
+        "source": "/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/src/main/res/layout/peripheral_list_services_item.xml"
+    }
+]
