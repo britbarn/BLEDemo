@@ -3,30 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="c24fb65b488b2d3f69c34f628d0d387a6a1003a9">
-        <dex dex="/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9481f0e8ed969d7402da937d42c0c14aa2ef2d70/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/imac/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_13b5245b4c9b445f6087e1fa0c9766299089bf7f/classes.dex" />
+        <dex dex="/Users/imac/Sites/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_13b5245b4c9b445f6087e1fa0c9766299089bf7f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/imac/Sites/BLEDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="7ffd99a9c9ddc4bd534f1995e9dfca85cbe413be">
-        <dex dex="/Users/imac/Downloads/app-accelerator-2-1/Android/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fd44af055faca73f79beb94586f947a092a1c439/classes.dex" />
+        sha1="ef071ab1f5b50bd81332841bfebd7a96274038fa">
+        <dex dex="/Users/imac/Sites/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2c57e2f37d9fac533ee425b81a3e9e5fc574c4b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/imac/Sites/BLEDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3a94f1c59b2ec023dc20bf9319b4431bf978fee6">
+        <dex dex="/Users/imac/Sites/BLEDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1d3a9e06c028610bb0cc37ed8cd4c51e96d8ffec/classes.dex" />
     </item>
 
 </items>

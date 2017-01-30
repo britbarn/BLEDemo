@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Log;
 
 public class PeripheralActivity extends Activity implements BleWrapperUiCallbacks {	
     public static final String EXTRAS_DEVICE_NAME    = "BLE_DEVICE_NAME";
@@ -100,6 +101,7 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 
 
 	//triggered when we are on the services list screen. takes device
+	//this just lists out the available services. don't need, we have the service we need
     public void uiAvailableServices(final BluetoothGatt gatt,
     						        final BluetoothDevice device,
     							    final List<BluetoothGattService> services)
@@ -112,7 +114,8 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 				mListView.setAdapter(mServicesListAdapter);
 				mHeaderTitle.setText(mDeviceName + "\'s services:");
 				mHeaderBackButton.setVisibility(View.INVISIBLE);
-				
+
+                //loop that adds all the services found
     			for(BluetoothGattService service : mBleWrapper.getCachedServices()) {
             		mServicesListAdapter.addService(service);
             	}				
@@ -122,6 +125,7 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
     }
 
 	//triggered when on view with characteristics. note it takes an arguement service from before
+	//don't need this either, we know what characteristics we need
     public void uiCharacteristicForService(final BluetoothGatt gatt,
     				 					   final BluetoothDevice device,
     									   final BluetoothGattService service,
@@ -143,7 +147,9 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 			}
     	});
     }
-    
+
+	//this is where the read and write buttons are
+	//this funtion seems to just output the data on the screen
     public void uiCharacteristicsDetails(final BluetoothGatt gatt,
 					 					 final BluetoothDevice device,
 										 final BluetoothGattService service,
@@ -156,13 +162,14 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 				mListView.setAdapter(mCharDetailsAdapter);
 		    	mHeaderTitle.setText(BleNamesResolver.resolveCharacteristicName(characteristic.getUuid().toString().toLowerCase(Locale.getDefault())) + "\'s details:");
 		    	mHeaderBackButton.setVisibility(View.VISIBLE);
-		    	
+		    	Log.d("test", characteristic.getUuid().toString());
 		    	mCharDetailsAdapter.setCharacteristic(characteristic);
 		    	mCharDetailsAdapter.notifyDataSetChanged();
 			}
     	});
     }
 
+	//this is what actually saves the value to the characteristic
     public void uiNewValueForCharacteristic(final BluetoothGatt gatt,
 											final BluetoothDevice device,
 											final BluetoothGattService service,
@@ -181,7 +188,8 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 			}
     	});
     }
- 
+
+	//little notification that shows up when it's written
 	public void uiSuccessfulWrite(final BluetoothGatt gatt,
             					  final BluetoothDevice device,
             					  final BluetoothGattService service,
@@ -195,7 +203,8 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 			}
 		});
 	}
-	
+
+	//notification when failed to write
 	public void uiFailedWrite(final BluetoothGatt gatt,
 							  final BluetoothDevice device,
 							  final BluetoothGattService service,
@@ -229,7 +238,8 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 	public void uiDeviceFound(BluetoothDevice device, int rssi, byte[] record) {
 		// no need to handle that in this Activity (here, we are not scanning)
 	}  	
-	
+
+	//this is for the adapter list view, navigation
     private AdapterView.OnItemClickListener listClickListener = new AdapterView.OnItemClickListener() {
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -259,12 +269,15 @@ public class PeripheralActivity extends Activity implements BleWrapperUiCallback
 			}
 		}     	
 	};  
-    
+
+	//putting all the variables on the screen
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_peripheral);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		//this is a list view that's the first one
+
 		mListViewHeader = (View) getLayoutInflater().inflate(R.layout.peripheral_list_services_header, null, false);
 		
 		connectViewsVariables();
